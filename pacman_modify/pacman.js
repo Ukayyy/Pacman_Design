@@ -1021,8 +1021,8 @@ var PACMAN = (function () {
                     setState(EATEN_PAUSE);
                     timerStart = tick;
                 } else if (ghosts[i].isDangerous()) {
-                    // audio.play("die");
-                    // setState(DYING);
+                    audio.play("die");
+                    setState(DYING);
                     timerStart = tick;
                 }
             }
